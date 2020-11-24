@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/gray_font_0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar_layout"
+        android:visibility="gone"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@mipmap/logo"
+        android:padding="50dp"
+        android:layout_height="200dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="30px">
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_font_2"
+                android:layout_marginLeft="15px"
+                android:text="手机号"/>
+
+            <EditText
+                android:id="@+id/l_userphone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:layout_marginLeft="80px"
+                android:textColor="@color/gray_font_2"
+                android:textColorHint="@color/gray_font_1"
+                android:maxLines="1"
+                android:text="@string/phone"
+                android:inputType="number"
+                android:hint="请填写手机号"
+                android:textSize="28px"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/l_phone_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray_font_1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_font_2"
+                android:layout_marginLeft="15px"
+                android:text="密     码"/>
+
+            <EditText
+                android:id="@+id/l_userpwd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:layout_marginLeft="80px"
+                android:text="@string/mm"
+                android:textColor="@color/gray_font_2"
+                android:textColorHint="@color/gray_font_1"
+                android:maxLines="1"
+                android:inputType="textPassword"
+                android:hint="密码"
+                android:textSize="28px"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/l_problem"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue_font_1"
+            android:layout_marginTop="40px"
+            android:layout_gravity="center"
+            android:textSize="24px"
+            android:text="登录遇到问题?"/>
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_font_2"
+            android:padding="30px"
+            android:layout_gravity="center"
+            android:textSize="24px"
+            android:text="其他登陆方式"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="100dp"
+            android:visibility="gone"
+            android:gravity="center">
+        <ImageView
+            android:id="@+id/imQQ"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:visibility="gone"
+            android:src="@drawable/ssdk_oks_classic_qq"/>
+            <ImageView
+                android:layout_marginLeft="50dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:visibility="gone"
+                android:src="@drawable/ssdk_oks_classic_wechat"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.rey.material.widget.Button
+        android:id="@+id/l_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_2"
+        android:layout_marginTop="40px"
+        android:layout_marginRight="60px"
+        android:layout_marginLeft="60px"
+        app:rd_enable="true"
+        android:text="登录"
+        android:textColor="@color/white" />
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:paddingLeft="60px"
+        android:paddingRight="60px"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/wjmm"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="忘记密码"
+            android:textColor="@color/btn_1"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/xyhzc"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="新用户注册"
+            android:textColor="@color/btn_1"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="0dp" />
+    <ImageView
+        android:id="@+id/imwx"
+        android:layout_width="@dimen/fifty"
+        android:layout_height="@dimen/fifty"
+        android:layout_gravity="center"
+        android:padding="@dimen/five"
+        android:src="@drawable/ssdk_oks_classic_wechat"/>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:paddingLeft="60px"
+        android:paddingRight="60px"
+        android:padding="30px"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_font_2"
+            android:layout_gravity="center"
+            android:textSize="28px"
+            android:text="登陆即代表阅读并同意"/>
+       <TextView
+            android:id="@+id/l_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/btn_1"
+            android:layout_gravity="center"
+            android:textSize="28px"
+            android:text="服务条款"/>
+    </LinearLayout>
+
+
+</LinearLayout>

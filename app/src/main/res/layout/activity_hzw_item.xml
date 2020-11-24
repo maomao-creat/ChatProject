@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:paddingRight="25px"
+    android:paddingLeft="25px"
+    android:paddingBottom="30px"
+    android:layout_height="wrap_content">
+
+    <com.zykj.samplechat.ui.view.ResizableImageView
+        android:id="@+id/team_img"
+        android:layout_width="match_parent"
+        android:layout_height="320px"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/team_intro"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:gravity="center"
+        android:background="@color/separation"
+        android:textColor="#FF3333"
+        android:textSize="16sp"
+        android:text="简介"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_bg_1"/>
+
+</LinearLayout>

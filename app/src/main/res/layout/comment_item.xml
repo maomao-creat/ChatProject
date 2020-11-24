@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_comment"
+    android:orientation="horizontal"
+    android:paddingBottom="3px"
+    android:paddingTop="3px">
+
+    <TextView
+        android:id="@+id/tv_user_commenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blue_font_1"
+        android:text="comment_b"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_reply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray_font_2"
+        android:layout_marginLeft="8px"
+        android:layout_marginRight="8px"
+        android:text=" 回复 "
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_user_commented"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blue_font_1"
+        android:text="comment_a"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_conent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray_font_2"
+        android:layout_marginLeft="8px"
+        android:layout_marginRight="8px"
+        android:text=" :comment data " />
+
+</LinearLayout>

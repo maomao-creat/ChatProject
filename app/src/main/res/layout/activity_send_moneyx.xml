@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundLogin"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#FE5B5C"
+        app:elevation="4dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FE5B5C"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_back"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_vertical"
+                    android:padding="14dp"
+                    android:src="@drawable/fanhuibaise" />
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text=""
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="10px"
+                    android:text="确定"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+
+            </FrameLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/sm_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/backgroundLogin"
+            android:orientation="vertical"
+            android:paddingBottom="50px"
+            android:paddingLeft="50px"
+            android:paddingRight="50px"
+            android:paddingTop="50px">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90px"
+                android:layout_marginBottom="10px"
+                android:background="@drawable/shape_9"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_10"
+                    android:text="拼"
+                    android:textSize="12sp"
+                    android:padding="2dp"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/money_h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="总金额"
+                    android:textColor="@color/gray_font_2" />
+
+                <EditText
+                    android:id="@+id/money_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30px"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:hint="0"
+                    android:layout_weight="1"
+                    android:layout_marginRight="20px"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:textColor="@color/gray_font_2"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="元"
+                    android:textColor="@color/gray_font_2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/money_state_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="30px"
+                android:paddingLeft="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="每人抽到的金额随机"
+                    android:textSize="12sp"
+                    android:textColor="@color/gray_font_1" />
+
+                <TextView
+                    android:id="@+id/money_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="普通红包"
+                    android:textColor="@color/blue_font_1"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/more_to_more"
+                android:layout_width="match_parent"
+                android:layout_height="90px"
+                android:layout_marginBottom="10px"
+                android:background="@drawable/shape_9"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="红包个数"
+                    android:textColor="@color/gray_font_2" />
+
+                <EditText
+                    android:id="@+id/money_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30px"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:layout_marginRight="20px"
+                    android:text=""
+                    android:hint="填写个数"
+                    android:textColor="@color/gray_font_2"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="个"
+                    android:textColor="@color/gray_font_2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="30px"
+                android:paddingLeft="30px">
+
+                <TextView
+                    android:id="@+id/tv_allpeople"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="本群共1人"
+                    android:textSize="12sp"
+                    android:textColor="@color/gray_font_1" />
+                <TextView
+                    android:id="@+id/tv_ts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="红包发布范围20-500元"
+                    android:visibility="gone"
+                    android:textSize="12sp"
+                    android:textColor="@color/gray_font_1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90px"
+                android:layout_marginBottom="30px"
+                android:background="@drawable/shape_9"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="留         言"
+                    android:textColor="@color/gray_font_2" />
+
+                <EditText
+                    android:id="@+id/money_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30px"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:hint="恭喜发财，大吉大利"
+                    android:maxLines="1"
+                    android:textColor="@color/gray_font_2"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="￥"
+                    android:textColor="@color/gray_font_2"
+                    android:textSize="28sp" />
+
+                <TextView
+                    android:id="@+id/money_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="0.00"
+                    android:textColor="@color/gray_font_2"
+                    android:textSize="28sp" />
+
+            </LinearLayout>
+
+            <com.rey.material.widget.Button
+                android:id="@+id/send_money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40px"
+                android:background="@drawable/shape_8"
+                android:text="塞钱"
+                android:textColor="@color/white"
+                android:textSize="28px"
+                app:rd_enable="true" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

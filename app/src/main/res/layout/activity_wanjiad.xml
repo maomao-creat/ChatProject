@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_font_9"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_layout" />
+   <ImageView
+       android:id="@+id/touxiang"
+       android:layout_gravity="center"
+       android:layout_width="80dp"
+       android:layout_marginTop="10dp"
+       android:layout_marginBottom="10dp"
+       android:src="@drawable/boy"
+       android:layout_height="80dp" />
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/refresh_progress_3"
+        android:textSize="20dp"
+        android:layout_marginBottom="10dp"
+        android:text=""/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_height="70dp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:text="今日收益"
+                android:textColor="@color/refresh_progress_3"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/zsr"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textColor="@color/refresh_progress_3"
+                android:gravity="center"
+                android:text="￥0"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:text="昨日收益"
+                android:textColor="@color/refresh_progress_3"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/zzc"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textColor="@color/refresh_progress_3"
+                android:gravity="center"
+                android:text="￥0"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_jiaoyi"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:background="@drawable/boder_only_top_bottom_gray"
+        android:layout_marginTop="10px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="35px"
+        android:paddingRight="35px">
+
+        <ImageView
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:paddingRight="20px"
+            android:src="@mipmap/hongbaojilu" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="交易记录"
+            android:textColor="@color/gray_font_2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/qianhuiqiantou" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="35px"
+        android:background="@color/gray_bg_1" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="30px">
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint=""
+                android:maxLines="1"
+                android:maxLength="13"
+                android:textColor="@color/gray_font_2"
+                android:textColorHint="@color/gray_font_1"
+                android:textSize="28px" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="好名字可以让你的朋友更容易记住你"
+                android:textColor="@color/gray_font_1" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

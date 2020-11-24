@@ -1,0 +1,75 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\androidxm\SampleChat\WXLikeVideoRecorderLib\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from D:\androidxm\SampleChat\WXLikeVideoRecorderLib\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from D:\androidxm\SampleChat\WXLikeVideoRecorderLib\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from D:\androidxm\SampleChat\WXLikeVideoRecorderLib\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from D:\androidxm\SampleChat\WXLikeVideoRecorderLib\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from D:\androidxm\SampleChat\WXLikeVideoRecorderLib\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from D:\androidxm\SampleChat\WXLikeVideoRecorderLib\src\main\AndroidManifest.xml:2:1-23:12
+	package
+		ADDED from D:\androidxm\SampleChat\WXLikeVideoRecorderLib\src\main\AndroidManifest.xml:3:5-35
+		INJECTED from D:\androidxm\SampleChat\WXLikeVideoRecorderLib\src\main\AndroidManifest.xml
+		INJECTED from D:\androidxm\SampleChat\WXLikeVideoRecorderLib\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from D:\androidxm\SampleChat\WXLikeVideoRecorderLib\src\main\AndroidManifest.xml:5:5-30
+		INJECTED from D:\androidxm\SampleChat\WXLikeVideoRecorderLib\src\main\AndroidManifest.xml
+		INJECTED from D:\androidxm\SampleChat\WXLikeVideoRecorderLib\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\androidxm\SampleChat\WXLikeVideoRecorderLib\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from D:\androidxm\SampleChat\WXLikeVideoRecorderLib\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from D:\androidxm\SampleChat\WXLikeVideoRecorderLib\src\main\AndroidManifest.xml
+		INJECTED from D:\androidxm\SampleChat\WXLikeVideoRecorderLib\src\main\AndroidManifest.xml
+uses-permission#android.permission.CAMERA
+ADDED from D:\androidxm\SampleChat\WXLikeVideoRecorderLib\src\main\AndroidManifest.xml:7:5-65
+	android:name
+		ADDED from D:\androidxm\SampleChat\WXLikeVideoRecorderLib\src\main\AndroidManifest.xml:7:22-62
+uses-permission#android.permission.INTERNET
+ADDED from D:\androidxm\SampleChat\WXLikeVideoRecorderLib\src\main\AndroidManifest.xml:8:5-67
+	android:name
+		ADDED from D:\androidxm\SampleChat\WXLikeVideoRecorderLib\src\main\AndroidManifest.xml:8:22-64
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from D:\androidxm\SampleChat\WXLikeVideoRecorderLib\src\main\AndroidManifest.xml:9:5-71
+	android:name
+		ADDED from D:\androidxm\SampleChat\WXLikeVideoRecorderLib\src\main\AndroidManifest.xml:9:22-68
+uses-permission#android.permission.WAKE_LOCK
+ADDED from D:\androidxm\SampleChat\WXLikeVideoRecorderLib\src\main\AndroidManifest.xml:10:5-68
+	android:name
+		ADDED from D:\androidxm\SampleChat\WXLikeVideoRecorderLib\src\main\AndroidManifest.xml:10:22-65
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\androidxm\SampleChat\WXLikeVideoRecorderLib\src\main\AndroidManifest.xml:11:5-81
+	android:name
+		ADDED from D:\androidxm\SampleChat\WXLikeVideoRecorderLib\src\main\AndroidManifest.xml:11:22-78
+permission#android.permission.FLASHLIGHT
+ADDED from D:\androidxm\SampleChat\WXLikeVideoRecorderLib\src\main\AndroidManifest.xml:13:5-16:44
+	android:protectionLevel
+		ADDED from D:\androidxm\SampleChat\WXLikeVideoRecorderLib\src\main\AndroidManifest.xml:16:9-41
+	android:permissionGroup
+		ADDED from D:\androidxm\SampleChat\WXLikeVideoRecorderLib\src\main\AndroidManifest.xml:15:9-77
+	android:name
+		ADDED from D:\androidxm\SampleChat\WXLikeVideoRecorderLib\src\main\AndroidManifest.xml:14:9-53
+uses-feature#android.hardware.camera
+ADDED from D:\androidxm\SampleChat\WXLikeVideoRecorderLib\src\main\AndroidManifest.xml:18:5-60
+	android:name
+		ADDED from D:\androidxm\SampleChat\WXLikeVideoRecorderLib\src\main\AndroidManifest.xml:18:19-57
+uses-feature#android.hardware.camera.front
+ADDED from D:\androidxm\SampleChat\WXLikeVideoRecorderLib\src\main\AndroidManifest.xml:19:5-21:36
+	android:required
+		ADDED from D:\androidxm\SampleChat\WXLikeVideoRecorderLib\src\main\AndroidManifest.xml:21:9-33
+	android:name
+		ADDED from D:\androidxm\SampleChat\WXLikeVideoRecorderLib\src\main\AndroidManifest.xml:20:9-53
+uses-sdk
+INJECTED from D:\androidxm\SampleChat\WXLikeVideoRecorderLib\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\androidxm\SampleChat\WXLikeVideoRecorderLib\src\main\AndroidManifest.xml
+INJECTED from D:\androidxm\SampleChat\WXLikeVideoRecorderLib\src\main\AndroidManifest.xml
+INJECTED from D:\androidxm\SampleChat\WXLikeVideoRecorderLib\src\main\AndroidManifest.xml
+INJECTED from D:\androidxm\SampleChat\WXLikeVideoRecorderLib\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\androidxm\SampleChat\WXLikeVideoRecorderLib\src\main\AndroidManifest.xml
+		ADDED from D:\androidxm\SampleChat\WXLikeVideoRecorderLib\src\main\AndroidManifest.xml
+		INJECTED from D:\androidxm\SampleChat\WXLikeVideoRecorderLib\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\androidxm\SampleChat\WXLikeVideoRecorderLib\src\main\AndroidManifest.xml
+		ADDED from D:\androidxm\SampleChat\WXLikeVideoRecorderLib\src\main\AndroidManifest.xml
+		INJECTED from D:\androidxm\SampleChat\WXLikeVideoRecorderLib\src\main\AndroidManifest.xml

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <com.zykj.titoujiang.custome.MovieRecorderView
+        android:id="@+id/movieRecorderView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        />
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+		<!--android:background="@color/title_background_blue"-->
+	    <Button
+	        android:id="@+id/shoot_button"
+	        android:layout_width="100dp"
+	        android:layout_height="100dp"
+	        android:layout_gravity="center"
+	        />
+		<!--android:background="@drawable/anzhupai"-->
+
+		<TextView
+	        android:id="@+id/baocun"
+	        android:layout_width="200dp" 
+	        android:layout_height="50dp"
+	        android:visibility="gone"
+	        />
+
+		<!--android:background="@drawable/baocun"-->
+
+		<TextView
+	        android:id="@+id/chongpai"
+	        android:layout_width="200dp" 
+	        android:layout_height="50dp"
+	        android:layout_marginTop="10dp"
+	        android:visibility="gone"
+	        />
+
+		<!--android:background="@drawable/chongpai"-->
+
+	</LinearLayout>
+
+</LinearLayout>

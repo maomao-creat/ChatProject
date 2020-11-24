@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:background="@color/own_bg">
+
+    <include layout="@layout/toolbar_layout"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60px"
+        android:background="@drawable/boder_only_top_bottom_gray"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="35px"
+            android:paddingRight="35px">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="真实姓名"
+                android:textColor="@color/gray_font_2" />
+
+            <EditText
+                android:id="@+id/xm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:layout_marginLeft="40px"
+                android:textColor="@color/gray_font_2"
+                android:textColorHint="@color/gray_font_1"
+                android:maxLines="1"
+                android:hint="请输入支付宝真实姓名"
+                android:textSize="28px"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray_bg_1" />
+
+        <LinearLayout
+            android:id="@+id/ll_oldpwd"
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="35px"
+            android:paddingRight="35px">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="支付宝账号"
+                android:textColor="@color/gray_font_2" />
+
+            <EditText
+                android:id="@+id/zfbzh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:layout_marginLeft="40px"
+                android:textColor="@color/gray_font_2"
+                android:textColorHint="@color/gray_font_1"
+                android:maxLines="1"
+                android:hint="请输入支付宝账号"
+                android:textSize="28px"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray_bg_1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:paddingLeft="35px"
+            android:paddingRight="35px">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="手机号"
+                android:textColor="@color/gray_font_2" />
+
+            <EditText
+                android:id="@+id/sjh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:inputType="number"
+                android:layout_marginLeft="40px"
+                android:textColor="@color/gray_font_2"
+                android:textColorHint="@color/gray_font_1"
+                android:maxLines="1"
+                android:hint="请输入手机号"
+                android:textSize="28px"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <com.rey.material.widget.Button
+        android:id="@+id/bdzh"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_1"
+        android:layout_marginRight="20dp"
+        app:rd_enable="true"
+        android:text="绑定到该支付宝账号"
+        android:textColor="@color/white" />
+</LinearLayout>

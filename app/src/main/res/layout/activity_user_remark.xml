@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/own_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:gravity="center_vertical"
+        android:paddingLeft="40px"
+        android:layout_marginTop="10px"
+        android:maxLines="1"
+        android:text="备注名"
+        android:textColor="@color/gray_font_2"
+        android:textSize="28px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30px"
+        android:paddingBottom="30px"
+        android:paddingLeft="40px"
+        android:paddingRight="40px"
+        android:background="@drawable/boder_only_top_bottom_gray"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/ur_remark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="填写备注名"
+            android:textColorHint="@color/gray_font_1"
+            android:maxLines="1"
+            android:textSize="28px"
+            android:textColor="@color/gray_font_2" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:gravity="center_vertical"
+        android:paddingLeft="40px"
+        android:layout_marginTop="10px"
+        android:maxLines="1"
+        android:text="电话号码"
+        android:textColor="@color/gray_font_2"
+        android:textSize="28px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30px"
+        android:paddingBottom="30px"
+        android:paddingLeft="40px"
+        android:paddingRight="40px"
+        android:background="@drawable/boder_only_top_bottom_gray"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/ur_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="添加电话号码"
+            android:textColorHint="@color/gray_font_1"
+            android:maxLines="1"
+            android:textSize="28px"
+            android:textColor="@color/gray_font_2" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:gravity="center_vertical"
+        android:paddingLeft="40px"
+        android:layout_marginTop="10px"
+        android:maxLines="1"
+        android:text="描述"
+        android:textColor="@color/gray_font_2"
+        android:textSize="28px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30px"
+        android:paddingBottom="30px"
+        android:paddingLeft="40px"
+        android:paddingRight="40px"
+        android:background="@drawable/boder_only_top_bottom_gray"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/ur_context"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="添加更多备注信息"
+            android:textColorHint="@color/gray_font_1"
+            android:textSize="28px"
+            android:textColor="@color/gray_font_2" />
+    </LinearLayout>
+
+</LinearLayout>

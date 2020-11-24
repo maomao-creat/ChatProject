@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/dm_register"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="35px"
+        android:paddingRight="35px">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册"
+            android:textColor="@color/gray_font_2" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_bg_1" />
+
+    <LinearLayout
+        android:id="@+id/dm_reset"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="35px"
+        android:paddingRight="35px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改密码"
+            android:textColor="@color/gray_font_2" />
+
+    </LinearLayout>
+
+</LinearLayout>

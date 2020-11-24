@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="30px">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请输入你的手机号"
+            android:textColor="@color/gray_font_2"
+            android:textSize="32px"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="30px">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray_bg_1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15px"
+                android:text="账   号"
+                android:textColor="@color/gray_font_2" />
+
+            <EditText
+                android:id="@+id/rs_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="80px"
+                android:background="@null"
+                android:hint="请输入您的账号"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textColor="@color/gray_font_2"
+                android:textColorHint="@color/gray_font_1"
+                android:textSize="28px" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray_bg_1" />
+
+        <com.rey.material.widget.Button
+            android:id="@+id/ls_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
+            android:background="@drawable/shape_2"
+            android:text="下一步"
+            android:textColor="@color/white"
+            app:rd_enable="true" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/l_more"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/blue_font_1"
+            android:padding="30px"
+            android:gravity="bottom|center"
+            android:textSize="28px"
+            android:text="点击上面的“注册”按钮，即表示你同意\n《软件许可及服务协议》"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:elevation="4dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <FrameLayout android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_back"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_vertical"
+                    android:padding="14dp"
+                    android:src="@drawable/icon_back"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="朋友圈"
+                    android:textColor="@color/theme_blacker"
+                    android:textSize="18sp"/>
+
+                <ImageView
+                    android:id="@+id/img_action"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:padding="8dp"
+                    android:visibility="gone"
+                    android:src="@drawable/camera"
+                    />
+
+
+            </FrameLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <com.zykj.samplechat.ui.widget.MultiSwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none" />
+
+    </com.zykj.samplechat.ui.widget.MultiSwipeRefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/input_rl"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:visibility="gone"
+        android:background="@drawable/boder_only_top_bottom_gray">
+
+        <EditText
+            android:id="@+id/comment"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:layout_marginRight="60dp"
+            android:layout_marginLeft="8dp"
+            android:hint=""
+            android:textColor="@color/gray_font_2"
+            android:textColorHint="@color/gray_font_1"
+            android:textSize="28px" />
+
+        <com.rey.material.widget.Button
+            android:id="@+id/send"
+            android:layout_width="50dp"
+            android:layout_height="32dp"
+            android:layout_margin="6dp"
+            android:layout_alignParentRight="true"
+            android:text="发送"
+            android:textSize="14dp"
+            app:rd_enable="true"
+            android:textColor="@color/white"
+            android:background="@drawable/shape_3"/>
+
+        <View
+            android:id="@+id/l_phone_line"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="40dp"
+            android:layout_height="1px"
+            android:background="@color/green_1" />
+
+    </RelativeLayout>
+
+</LinearLayout>

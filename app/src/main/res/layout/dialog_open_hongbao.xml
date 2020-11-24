@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <!--    <RelativeLayout-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="1400px"-->
+    <!--        android:background="@color/transparent">-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/iv_bj"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:scaleType="fitXY"-->
+    <!--            android:src="@drawable/qiangmei" />-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/user_img"-->
+    <!--            android:layout_width="@dimen/sixty"-->
+    <!--            android:layout_height="@dimen/sixty"-->
+    <!--            android:layout_centerHorizontal="true"-->
+    <!--            android:layout_marginTop="@dimen/thirty"-->
+    <!--            android:src="@drawable/userimg" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/user_name"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_below="@id/user_img"-->
+    <!--            android:layout_centerHorizontal="true"-->
+    <!--            android:layout_marginTop="@dimen/ten"-->
+    <!--            android:maxLines="1"-->
+    <!--            android:ellipsize="end"-->
+    <!--            android:text="Ninos"-->
+    <!--            android:textColor="@color/white" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_below="@id/user_name"-->
+    <!--            android:layout_centerHorizontal="true"-->
+    <!--            android:layout_marginTop="@dimen/ten"-->
+    <!--            android:text="发了一个红包"-->
+    <!--            android:maxLines="1"-->
+    <!--            android:ellipsize="end"-->
+    <!--            android:textColor="@color/white"-->
+    <!--            android:textSize="12sp" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/user_content"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_below="@id/user_name"-->
+    <!--            android:layout_centerHorizontal="true"-->
+    <!--            android:layout_marginTop="@dimen/thirty_five"-->
+    <!--            android:maxLines="1"-->
+    <!--            android:ellipsize="end"-->
+    <!--            android:text="恭喜发财，大吉大利"-->
+    <!--            android:textColor="@color/white"-->
+    <!--            android:textSize="16sp" />-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/user_open"-->
+    <!--            android:layout_width="@dimen/seventy"-->
+    <!--            android:layout_height="@dimen/seventy"-->
+    <!--            android:layout_centerHorizontal="true"-->
+    <!--            android:layout_below="@id/user_content"-->
+    <!--            android:background="@color/transparent"-->
+    <!--            android:src="@drawable/kai"-->
+    <!--            android:layout_marginTop="@dimen/one_hundred_twenty"/>-->
+
+    <!--        <View-->
+    <!--            android:id="@+id/user_close"-->
+    <!--            android:layout_width="50px"-->
+    <!--            android:layout_height="50px"-->
+    <!--            android:layout_marginTop="10px"-->
+    <!--            android:background="@color/transparent"-->
+    <!--            android:layout_marginLeft="10px"/>-->
+
+    <!--        <View-->
+    <!--            android:id="@+id/user_see"-->
+    <!--            android:layout_width="300px"-->
+    <!--            android:layout_height="50px"-->
+    <!--            android:layout_alignParentBottom="true"-->
+    <!--            android:layout_centerHorizontal="true"-->
+    <!--            android:background="@color/transparent"-->
+    <!--            android:layout_marginBottom="100px" />-->
+
+    <!--    </RelativeLayout>-->
+
+    <LinearLayout
+        android:id="@+id/iv_bj"
+        android:layout_width="match_parent"
+        android:layout_height="470dp"
+        android:background="@drawable/qiangmei"
+        android:orientation="vertical"
+        android:scaleType="fitXY">
+
+
+        <ImageView
+            android:id="@+id/user_img"
+            android:layout_width="@dimen/sixty"
+            android:layout_height="@dimen/sixty"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/thirty"
+            android:src="@drawable/userimg" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/ten"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Ninos"
+            android:textStyle="bold"
+            android:textColor="#e8cb9b" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_name"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/ten"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:text="发了一个红包,金额随机"
+            android:textColor="#e8cb9b"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/user_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_name"
+            android:layout_marginBottom="@dimen/thirty"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/ten"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="恭喜发财，大吉大利"
+            android:textColor="#e8cb9b"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/user_open"
+            android:layout_width="@dimen/eighty"
+            android:layout_height="@dimen/eighty"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/transparent"
+            android:layout_marginBottom="@dimen/twenty"
+            android:src="@drawable/kai" />
+
+        <View
+            android:id="@+id/user_close"
+            android:layout_width="14dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="10px"
+            android:layout_marginTop="10px"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/transparent" />
+
+        <View
+            android:id="@+id/user_see"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fifty"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/transparent" />
+
+
+
+    </LinearLayout>
+</LinearLayout>

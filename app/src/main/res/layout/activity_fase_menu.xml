@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:paddingRight="10dp"
+	android:orientation="vertical">
+	<LinearLayout
+		android:visibility="gone"
+		android:id="@+id/ll_fqql"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/shape_top">
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:layout_marginLeft="12dp"
+			android:src="@drawable/i_faqiqunliao" />
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:padding="12dp"
+			android:text=" 发起群聊    "
+			android:textColor="#fff"
+			android:textSize="16sp"/>
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/ll_Coin"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/shape_top" >
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:layout_marginLeft="12dp"
+			android:src="@drawable/i_tianjiapengyou" />
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:padding="12dp"
+			android:text="添加好友    "
+			android:textColor="#fff"
+			android:textSize="16sp" />
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/ll_Profile"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/shape_top">
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:layout_marginLeft="12dp"
+			android:src="@drawable/i_saoyisao" />
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:padding="12dp"
+			android:text="扫一扫    "
+			android:textColor="#fff"
+			android:textSize="16sp"/>
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/ll_Phones"
+		android:visibility="gone"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/shape_top" >
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:layout_marginLeft="12dp"
+			android:src="@drawable/i_shoukuan" />
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:padding="12dp"
+			android:text="收款    "
+			android:textColor="#fff"
+			android:textSize="16sp" />
+	</LinearLayout>
+
+</LinearLayout>

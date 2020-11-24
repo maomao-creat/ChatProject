@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/own_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <RelativeLayout
+        android:id="@+id/ou_vip"
+        android:orientation="vertical"
+        android:background="@drawable/boder_only_top_bottom_gray"
+        android:layout_width="match_parent"
+        android:paddingTop="30px"
+        android:paddingBottom="30px"
+        android:paddingLeft="40px"
+        android:paddingRight="40px"
+        android:layout_marginBottom="30px"
+        android:layout_marginTop="30px"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/ou_huiyuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8px"
+            android:textSize="28px"
+            android:textColor="@color/gray_font_2"
+            android:text="设置备注及标签"/>
+
+        <TextView
+            android:id="@+id/ou_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/ou_jiantou_1"
+            android:layout_marginLeft="8px"
+            android:layout_marginRight="20px"
+            android:textSize="28px"
+            android:visibility="invisible"
+            android:textColor="@color/gray_font_1"
+            android:text="用户昵称"/>
+
+        <ImageView
+            android:id="@+id/ou_jiantou_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/qianhuiqiantou"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/tuijian"
+        android:orientation="vertical"
+        android:background="@drawable/boder_only_top_bottom_gray"
+        android:layout_width="match_parent"
+        android:paddingTop="30px"
+        android:paddingBottom="30px"
+        android:paddingLeft="40px"
+        android:paddingRight="40px"
+        android:layout_marginBottom="30px"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/ou_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8px"
+            android:textSize="28px"
+            android:textColor="@color/gray_font_2"
+            android:text="把Ta推荐给朋友"/>
+
+        <TextView
+            android:id="@+id/ou_card_manager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/ou_jiantou_2"
+            android:layout_marginLeft="8px"
+            android:layout_marginRight="20px"
+            android:textSize="28px"
+            android:textColor="@color/gray_font_1"
+            android:text=""/>
+
+        <ImageView
+            android:id="@+id/ou_jiantou_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/qianhuiqiantou"/>
+    </RelativeLayout>
+
+    <com.rey.material.widget.Button
+        android:id="@+id/ls_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30px"
+        android:background="@drawable/shape_5"
+        android:text="删除"
+        android:textColor="@color/white"
+        app:rd_enable="true" />
+
+</LinearLayout>

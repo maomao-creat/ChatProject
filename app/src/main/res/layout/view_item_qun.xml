@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorTopIcon"
+    android:layout_height="70dp"
+    android:paddingBottom="5dp"
+    android:id="@+id/zong"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:layout_height="70dp">
+        <!--头像显示-->
+        <ImageView
+            android:id="@+id/toux"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/userimg" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_height="0dp">
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:text="321321"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textSize="14dp"
+                    android:textColor="@color/text_black"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tjr"
+                    android:layout_width="0dp"
+                    android:text="(推荐人:xxxx)"
+                    android:gravity="left|center"
+                    android:textSize="12dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:text="注册时间:2017-02-11 15:00"
+                android:textSize="12dp"
+                android:gravity="left|center"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:layout_height="0dp" />
+        </LinearLayout>
+        <com.rey.material.widget.Button
+            android:id="@+id/l_login"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/shape_2"
+            app:rd_enable="true"
+            android:text="进入"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

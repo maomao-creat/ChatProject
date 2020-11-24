@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/ai_user"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="136px"
+    android:background="@color/white"
+    android:paddingLeft="20px"
+    android:paddingRight="20px"
+    android:paddingTop="20px"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/ai_userimg"
+        android:layout_width="100px"
+        android:layout_height="96px"
+        android:background="@color/white"
+        android:scaleType="fitXY"
+        android:layout_marginRight="30px"
+        android:src="@drawable/userimg"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/ai_userimg"
+        android:layout_marginBottom="20px"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/ai_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_font_2"
+            android:maxLines="1"
+            android:textSize="32px"
+            android:text="Name"/>
+
+        <TextView
+            android:id="@+id/ai_usernumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_font_1"
+            android:maxLines="1"
+            android:textSize="28px"
+            android:text="Message"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ai_unagree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_3"
+        android:textColor="@color/white"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:paddingTop="10px"
+        android:paddingBottom="10px"
+        android:paddingRight="20px"
+        android:paddingLeft="20px"
+        android:text="接受"/>
+
+    <TextView
+        android:id="@+id/ai_agree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray_font_1"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:visibility="invisible"
+        android:padding="15px"
+        android:text="已添加"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray_bg_1" />
+
+</RelativeLayout>

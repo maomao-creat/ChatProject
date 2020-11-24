@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/gi_userimg"
+        android:layout_width="80px"
+        android:layout_height="76px"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="12px"
+        android:layout_marginTop="20px"
+        android:background="@color/white"
+        android:scaleType="fitXY"
+        android:src="@drawable/userimg" />
+
+    <TextView
+        android:id="@+id/gi_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="25px"
+        android:layout_toRightOf="@+id/gi_userimg"
+        android:maxLines="1"
+        android:text="Name"
+        android:textColor="@color/blue_font_1"
+        android:textSize="28px" />
+
+    <TextView
+        android:id="@+id/gi_usercontent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gi_username"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="5px"
+        android:layout_toRightOf="@+id/gi_userimg"
+        android:text="Data for content."
+        android:textColor="@color/gray_font_2"
+        android:textSize="28px" />
+
+    <ImageView
+        android:id="@+id/gi_img"
+        android:layout_width="320px"
+        android:layout_height="240px"
+        android:layout_below="@id/gi_usercontent"
+        android:layout_marginTop="5px"
+        android:visibility="gone"
+        android:layout_toRightOf="@+id/gi_userimg"
+        android:scaleType="fitXY"></ImageView>
+
+    <LinearLayout
+        android:id="@+id/gi_pics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gi_img"
+        android:layout_marginTop="5px"
+        android:visibility="gone"
+        android:layout_toRightOf="@+id/gi_userimg"
+        android:orientation="vertical"></LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/gi_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gi_pics"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="5px"
+        android:layout_toRightOf="@+id/gi_userimg">
+
+        <TextView
+            android:id="@+id/gi_userdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:maxLines="1"
+            android:text="1天前"
+            android:textColor="@color/gray_font_1"
+            android:textSize="20px" />
+
+        <TextView
+            android:id="@+id/gi_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/gi_userdate"
+            android:maxLines="1"
+            android:visibility="gone"
+            android:layout_marginLeft="20px"
+            android:text="删除"
+            android:textColor="@color/blue_font_1"
+            android:textSize="20px" />
+
+        <ImageView
+            android:id="@+id/gi_usercomimg"
+            android:layout_width="55px"
+            android:layout_height="50px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12px"
+            android:scaleType="fitXY"
+            android:src="@drawable/albumoperate" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/gi_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gi_bottom"
+        android:layout_marginBottom="8px"
+        android:layout_marginRight="20px"
+        android:visibility="gone"
+        android:layout_toRightOf="@+id/gi_userimg"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="61px"
+            android:layout_height="15px"
+            android:src="@drawable/comment_top" />
+
+        <LinearLayout
+            android:id="@+id/lay_like"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_comment"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:padding="10px">
+
+            <ImageView
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:src="@drawable/like"/>
+
+
+            <TextView
+                android:id="@+id/gi_likepeople"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/like_people"
+                android:textSize="28px"
+                android:layout_marginLeft="5px"
+                android:textColor="@color/blue_font_1" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/like_comment"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/gi_comment"
+            android:visibility="gone"
+            android:background="@color/gray_font_0" />
+
+        <LinearLayout
+            android:id="@+id/lay_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_comment"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:padding="10px">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/gi_comment"
+        android:layout_marginTop="5px"
+        android:background="@color/gray_bg_1" />
+
+</RelativeLayout>

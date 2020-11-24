@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/own_bg"
+    android:layout_margin="10dp"
+    >
+    <ImageView
+        android:id="@+id/touxiang"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/userimg"
+        />
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="50dp"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="left|center"
+        android:text="name"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/no3"
+            android:text=""
+
+            android:layout_width="match_parent"
+            android:gravity="right|center"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:text="点击查看详情"
+            android:textColor="@color/blue_font_1"
+            android:layout_width="match_parent"
+            android:gravity="right|center"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

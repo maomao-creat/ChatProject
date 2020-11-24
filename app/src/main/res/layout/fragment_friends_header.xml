@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="35px"
+    android:paddingLeft="25px"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/f_add_friends"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="75px"
+            android:layout_height="75px"
+            android:layout_marginRight="25px"
+            android:src="@drawable/m_moyou"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_font_2"
+            android:text="我的好友"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="45px"
+                android:layout_height="45px"
+                android:background="@drawable/shape_7"
+                android:textColor="@color/white"
+                android:visibility="invisible"
+                android:gravity="center"
+                android:text="99"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:visibility="gone"
+        android:background="@color/gray_bg_1"/>
+
+    <LinearLayout
+        android:id="@+id/f_group_create"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="75px"
+            android:layout_height="75px"
+            android:layout_marginRight="25px"
+            android:src="@drawable/m_qunliao"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_font_2"
+            android:text="群聊"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_bg_1"/>
+
+    <LinearLayout
+        android:id="@+id/f_group"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:visibility="gone"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="75px"
+            android:layout_height="75px"
+            android:layout_marginRight="25px"
+            android:src="@drawable/m_kefu"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_font_2"
+            android:text="客服"/>
+
+    </LinearLayout>
+</LinearLayout>

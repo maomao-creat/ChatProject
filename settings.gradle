@@ -1,0 +1,1 @@
+include ':app', ':autolayout', ':WXLikeVideoRecorderLib', ':IMLib', ':IMKit', ':permission', ':iOS_Dialog_Library', ':tuikit'

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="30px">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="60px"
+            android:layout_marginBottom="30px"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/le_userimg"
+                android:layout_width="180px"
+                android:layout_height="172px"
+                android:layout_alignBottom="@+id/group_view"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/userimg"
+                android:scaleType="fitXY"/>
+
+            <TextView
+                android:id="@+id/le_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:maxLines="1"
+                android:textColor="@color/gray_font_2"
+                android:text="账   号"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_font_2"
+                android:layout_marginLeft="15px"
+                android:text="密   码"/>
+
+            <EditText
+                android:id="@+id/le_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:layout_marginLeft="80px"
+                android:textColor="@color/gray_font_2"
+                android:textColorHint="@color/gray_font_1"
+                android:maxLines="1"
+                android:inputType="textPassword"
+                android:hint="密码"
+                android:textSize="28px"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/green_1" />
+        <com.rey.material.widget.Button
+            android:id="@+id/le_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_2"
+            android:layout_marginTop="40px"
+            app:rd_enable="true"
+            android:text="登录"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/l_problem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue_font_1"
+            android:layout_marginTop="40px"
+            android:layout_gravity="center"
+            android:textSize="24px"
+            android:text="登录遇到问题?"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/l_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blue_font_1"
+        android:padding="30px"
+        android:layout_gravity="center"
+        android:textSize="28px"
+        android:text="更 多"/>
+
+</LinearLayout>

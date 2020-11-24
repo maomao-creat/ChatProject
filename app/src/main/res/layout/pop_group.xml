@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="381px"
+    android:layout_height="70px"
+    android:orientation="horizontal"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:id="@+id/pg_like"
+        android:layout_width="190px"
+        android:layout_height="70px"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="0px"
+        android:paddingRight="0px">
+
+        <ImageView
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:src="@drawable/albumlike"/>
+
+
+        <TextView
+            android:id="@+id/like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="赞"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@color/gray_font_2" />
+
+    <LinearLayout
+        android:id="@+id/pg_comment"
+        android:layout_width="190px"
+        android:layout_height="70px"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="0px"
+        android:paddingRight="0px">
+
+        <ImageView
+            android:layout_width="45px"
+            android:layout_height="45px"
+            android:src="@drawable/albumcomment"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评论"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

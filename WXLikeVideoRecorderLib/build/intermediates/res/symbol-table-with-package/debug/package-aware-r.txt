@@ -1,0 +1,14 @@
+sz.itguy.wxlikevideo
+anim focus_animation
+anim indicator_animation
+attr cpv_focusDrawable
+attr cpv_indicatorDrawable
+attr rpb_backgroundColor
+attr rpb_cancelColor
+attr rpb_runningColor
+attr rpb_timeLength
+dimen camera_focus_area_size
+drawable ms_smallvideo_icon
+drawable ms_video_focus_icon
+styleable CameraPreviewView cpv_focusDrawable cpv_indicatorDrawable
+styleable RecordProgressBar rpb_backgroundColor rpb_cancelColor rpb_runningColor rpb_timeLength

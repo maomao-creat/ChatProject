@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/green_1"
+        android:orientation="vertical"
+        android:layout_height="200dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="我的下线"
+                android:visibility="invisible"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_height="match_parent" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="我的收益"
+                android:gravity="center"
+                android:textSize="@dimen/t_sixteen"
+                android:textColor="@color/white"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/wdxx"
+                android:layout_width="wrap_content"
+                android:text="我的下线"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="bottom|center"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="今日收益"
+                    android:textSize="@dimen/t_sixteen"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/jrsy"
+                    android:layout_width="55dp"
+                    android:text="0.00"
+                    android:textSize="@dimen/t_sixteen"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="bottom|center"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="昨日收益"
+                    android:textSize="@dimen/t_sixteen"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/zrsy"
+                    android:layout_width="55dp"
+                    android:text="0.00"
+                    android:textSize="@dimen/t_sixteen"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingBottom="30dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="收益总金额"
+                android:textSize="@dimen/t_eighteen"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/zsy"
+                android:layout_width="55dp"
+                android:text="0.00"
+                android:textSize="@dimen/t_eighteen"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

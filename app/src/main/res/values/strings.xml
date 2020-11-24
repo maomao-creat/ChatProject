@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">贝聊</string>
+    <string name="like_people">此动态%1$d人觉得赞</string>
+    <string name="photo_num">共%1$d张</string>
+    <string name="phone"></string>
+    <string name="mm"></string>
+    <string name="qsh">请稍后</string>
+
+
+    // 云通信
+    <string name="chat_top">置顶聊天</string>
+    <string name="chat_delete">删除聊天</string>
+    <string name="quit_chat_top">取消置顶</string>
+    <string name="chongzhi">充值</string>
+    <string name="zhuanzhang">转账</string>
+    <string name="tupian">图片</string>
+    <string name="tixian">余额</string>
+    <string name="hongbao">红包</string>
+</resources>

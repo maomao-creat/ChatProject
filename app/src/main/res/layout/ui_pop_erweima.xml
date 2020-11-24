@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:id="@+id/ll_erweima"
+    android:background="#38000000">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:id="@+id/ll_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/thirty"
+        android:layout_marginRight="@dimen/thirty"
+        android:background="@drawable/radius_solid_white10">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="贝聊官方下载码"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/fifteen"
+            android:textColor="@color/theme_blacker"
+            android:textStyle="bold"
+            android:textSize="@dimen/t_sixteen"/>
+        <ImageView
+            android:id="@+id/iv_erweima"
+            android:layout_width="@dimen/two_hundred"
+            android:layout_height="@dimen/two_hundred"
+            android:layout_gravity="center"
+            android:src="@drawable/erweima"/>
+        <TextView
+            android:id="@+id/tv_mycode"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/twenty_five"
+            android:text="我的推荐码:123456"
+            android:gravity="center"
+            android:textSize="@dimen/t_twelve"
+            android:textColor="@color/theme_blacker"
+            android:layout_marginBottom="@dimen/five" />
+        <TextView
+            android:id="@+id/tv_save"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/twenty_five"
+            android:text="保存二维码到本地相册"
+            android:gravity="center"
+            android:textSize="@dimen/t_twelve"
+            android:textColor="@color/colorSelectedIcon"
+            android:layout_marginBottom="@dimen/ten" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+</LinearLayout>

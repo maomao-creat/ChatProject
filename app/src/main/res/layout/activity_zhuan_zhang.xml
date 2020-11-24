@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_font_0"
+    android:orientation="vertical">
+    <include layout="@layout/toolbar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="10dp"
+        android:gravity="left|center"
+        android:background="@color/own_bg"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="转账金额:"
+            android:textSize="15dp"
+
+            android:textColor="#000000"/>
+        <EditText
+            android:id="@+id/tv_jine"
+            android:paddingLeft="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:hint="请输入转账的金额"
+            android:digits="1234567890."
+            android:textSize="15dp"
+            android:background="@null"
+            android:textColor="#000000"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/queding"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#1aad16"
+        android:text="确定转账"/>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lay_footer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="match_parent"
+        android:layout_height="30px"
+        android:layout_centerVertical="true"
+        android:background="#676767"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:text="正在加载..." />
+
+</RelativeLayout>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fram_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boder_only_top_gray"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/menu_two"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:paddingBottom="2px"
+            android:paddingTop="10px">
+
+            <ImageView
+                android:id="@+id/menu_two_img"
+                android:layout_width="55px"
+                android:layout_height="55px"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/liaotian" />
+
+            <TextView
+                android:id="@+id/menu_two_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/menu_two_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5px"
+                android:layout_marginTop="5px"
+                android:text="聊天"
+                android:textColor="@color/gray_font_1"
+                android:textSize="24px" />
+
+            <com.zykj.samplechat.ui.widget.DragPointView
+                android:id="@+id/seal_num"
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:layout_marginRight="19dp"
+                android:layout_marginTop="2dp"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/menu_three"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="2px"
+            android:paddingTop="10px">
+
+            <ImageView
+                android:id="@+id/menu_three_img"
+                android:layout_width="55px"
+                android:layout_height="55px"
+                android:src="@drawable/moyou" />
+
+            <TextView
+                android:id="@+id/menu_three_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5px"
+                android:layout_marginTop="5px"
+                android:text="通讯录"
+                android:textColor="@color/gray_font_1"
+                android:textSize="24px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menu_one"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="2px"
+            android:paddingTop="10px">
+
+            <ImageView
+                android:id="@+id/menu_one_img"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/youxi" />
+
+            <TextView
+                android:id="@+id/menu_one_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5px"
+                android:layout_marginTop="5px"
+                android:text="发现"
+                android:textColor="@color/gray_font_1"
+                android:textSize="24px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menu_one_fenx"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="2px"
+            android:paddingTop="10px"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/menu_one_img_fenx"
+                android:layout_width="55px"
+                android:layout_height="55px"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/fenxiang" />
+
+            <TextView
+                android:id="@+id/menu_one_text_fenx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5px"
+                android:layout_marginTop="5px"
+                android:text="分享"
+                android:textColor="@color/gray_font_1"
+                android:textSize="24px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menu_four"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="2px"
+            android:paddingTop="10px">
+
+            <ImageView
+                android:id="@+id/menu_four_img"
+                android:layout_width="55px"
+                android:layout_height="55px"
+                android:src="@drawable/wode" />
+
+            <TextView
+                android:id="@+id/menu_four_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5px"
+                android:layout_marginTop="5px"
+                android:text="我"
+                android:textColor="@color/gray_font_1"
+                android:textSize="24px" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

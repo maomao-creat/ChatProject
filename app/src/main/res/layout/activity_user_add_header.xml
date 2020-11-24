@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg_1">
+
+    <include layout="@layout/search" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_bg_1"/>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/add_for_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="30px"
+        android:background="@drawable/boder_only_top_bottom_gray"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="50px"
+            android:layout_height="100px"
+            android:layout_margin="30px"
+            android:src="@drawable/tel"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_font_1"
+            android:layout_marginBottom="30px"
+            android:text="添加手机联系人"/>
+
+    </LinearLayout>
+
+</LinearLayout>
